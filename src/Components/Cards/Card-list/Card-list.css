@@ -1,0 +1,9 @@
+.passwords {
+  padding: 6.25rem 8%;
+}
+
+.passwords__innerSection{
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1.25rem;
+}

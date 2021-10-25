@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* default start */
+.btn{
+    background: linear-gradient(45deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    border-radius: 30px;
+    padding: 0.8125rem 2.1875rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 700;
+    display: inline-block;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 2rem;
+    color: hsl(233, 26%, 24%);
+    margin-bottom: 1.875rem;
+}
+
+
+h3{
+    color: hsl(233, 26%, 24%);
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+}
+
+.paragraph{
+    color: hsl(233, 8%, 62%);
+    line-height: 1.7;
+    font-size: 0.9375rem;
+}
+
+/* default end */
+
+body{
+    font-family: "Public Sans", "Montserat", sans-serif;
+    overflow-x: hidden;
+}

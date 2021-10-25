@@ -1,0 +1,35 @@
+{
+  "allPasswords": [
+    {
+      "companyName": "devsoft", 
+      "username": "Félix",
+      "email": "felix.pereira@devsoft.co.ao", 
+      "password": "felix123",
+      "loginLink": "https://devsoft.co.ao/webmail"
+    },
+
+    {
+      "companyName": "devsoft", 
+      "username": "Félix",
+      "email": "felix.pereira@devsoft.co.ao", 
+      "password": "felix123",
+      "loginLink": "https://devsoft.co.ao/webmail"
+    },
+
+    {
+      "companyName": "devsoft", 
+      "username": "Félix",
+      "email": "felix.pereira@devsoft.co.ao", 
+      "password": "felix123",
+      "loginLink": "https://devsoft.co.ao/webmail"
+    },
+
+    {
+      "companyName": "devsoft", 
+      "username": "Félix",
+      "email": "felix.pereira@devsoft.co.ao", 
+      "password": "felix123",
+      "loginLink": "https://devsoft.co.ao/webmail"
+    }
+  ]
+}
