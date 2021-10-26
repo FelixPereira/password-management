@@ -1,10 +1,10 @@
 import React from 'react';
 import './input.css';
 
-const filter = () => {
+const filter = ({ handleFilter }) => {
   return(
     <input
-      onChange='' 
+    onChange={handleFilter}
       type='search'
       placeholder='Insira um termo...'
     />

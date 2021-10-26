@@ -6,17 +6,18 @@ import passwords from './db';
 
 
 const App = () => {
-  let [inputTerm, setTerm] = useState('');
-  console.log(inputTerm)
-
-  setTerm = () => {
-    this.inputTerm = 'ola'
+  const [inputTerm, setTerm] = useState('');
+  
+  const handleFilter = e => {
+    setTerm( e.target.value);
   }
+
+  const filteredPasswords = passwords.filter(password => password.username.toLocaleLowerCase().includes(inputTerm.toLocaleLowerCase()))
 
   return(
       <main className='container'>
-        <Filter />
-        <CardList passwords={ passwords } />
+        <Filter handleFilter={handleFilter} />
+        <CardList passwords={ filteredPasswords } />
       </main>
   )
 }
