@@ -7,3 +7,17 @@
   grid-template-columns: 1fr;
   row-gap: 1.25rem;
 }
+
+@media screen and (min-width: 768px) {
+  .passwords__innerSection {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .passwords__innerSection {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1.25rem;
+  }
+}
