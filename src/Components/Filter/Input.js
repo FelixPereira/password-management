@@ -3,7 +3,8 @@ import './input.css';
 
 const filter = () => {
   return(
-    <input 
+    <input
+      onChange='' 
       type='search'
       placeholder='Insira um termo...'
     />
