@@ -4,11 +4,11 @@ import './Card.css';
 const Card = ({ password }) => {
   return(
     <article className='passwords__item'>
-      <p> Nome da empresa: { password.companyName } </p>
-      <p> Nome de usuário: { password.username } </p>
-      <p> Email: { password.email } </p>
-      <p> Password: { password.password } </p>
-      <p> Link para login { password.loginLink } </p>
+      <h3 className='passwords__companyName'> { password.companyName } </h3>
+      <p className='passwords__userNAme'> <span> Nome de usuário: </span> { password.username } </p>
+      <p className='passwords__email'> <span> Email: </span> { password.email } </p>
+      <p className='passwords__password'> <span> Password: </span> { password.password } </p>
+      <p className='passwords__loginLink'> <span> Link para login </span> { password.loginLink } </p>
     </article>
   )
 }
