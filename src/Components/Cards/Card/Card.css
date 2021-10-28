@@ -1,9 +1,11 @@
 .passwords__item {
   color: #868686;
+  background-color: #ffffff;
   line-height: 2;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 2px;
   border: 2px solid #ccc;
+  box-shadow: 2px 3px 20px 10px #E1E6EE;
 }
 
 .passwords__item:hover {
