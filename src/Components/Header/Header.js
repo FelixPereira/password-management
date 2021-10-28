@@ -4,10 +4,10 @@ import './Header.css';
 const header = () => {
   return(
     <header className='header'>
-      <div>
+      <div className='header_logo'>
         <img src='#' alt='Logotipo da devsoft'/>
       </div>
-      <button>Adicionar</button>
+      <button className='header_btn'>Adicionar</button>
     </header>
   )
 }
