@@ -25,8 +25,28 @@
   color: #ffffff;
 }
 
-.companys__details {
-  padding: 10px 20px;
+.companys__details,
+.companys_btn {
+  padding: 20px;
+}
+
+.companys_btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: #A0C618;
+  color: #ffffff;
+  border: none;
+  padding: 0.625rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.companys__btn--red {
+  background-color: transparent;
+  color: red;
 }
 
 

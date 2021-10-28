@@ -1,7 +1,7 @@
 .passwords__innerSection{
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 1.25rem;
+  row-gap: 2.25rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -13,7 +13,7 @@
 
 @media screen and (min-width: 1024px) {
   .passwords__innerSection {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 1.25rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2.25rem;
   }
 }

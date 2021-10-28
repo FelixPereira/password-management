@@ -9,9 +9,15 @@ const Card = ({ password }) => {
       </div>
 
       <div className='companys__details'>
-        <p> <span> Nome de usuário: </span> { password.username } </p>
+        <p> <span> Contacto: </span> { password.email } </p>
         <p> <span> Email: </span> { password.email } </p>
-        <p> <span> Email: </span> { password.email } </p>
+        <p> <span> Website: </span> { password.email } </p>
+      </div>
+
+      <div className='companys_btn'>
+        <button className='btn'>Detalhes</button>
+        <button className='btn'>Arquivar</button>
+        <button className='btn companys__btn--red'>Remover</button>
       </div>
     </article>
   )
