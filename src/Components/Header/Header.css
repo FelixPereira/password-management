@@ -1,12 +1,13 @@
 .header {
-  width: 100%;
+  padding: 0.625rem 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #ffffff;
 }
 
 .header_btn {
-  background-color: blue;
+  background-color: #A0C618;
   color: #ffffff;
   border: none;
   padding: 0.625rem;

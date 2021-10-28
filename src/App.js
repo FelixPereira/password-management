@@ -16,11 +16,13 @@ const App = () => {
   const filteredPasswords = passwords.filter(password => password.username.toLocaleLowerCase().includes(inputTerm.toLocaleLowerCase()))
 
   return(
+    <div>
+      <Header />
       <main className='container'>
-        <Header />
         <Filter handleFilter={handleFilter} />
         <CardList passwords={ filteredPasswords } />
       </main>
+    </div>
   )
 }
 

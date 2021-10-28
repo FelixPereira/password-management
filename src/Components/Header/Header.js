@@ -5,7 +5,7 @@ const header = () => {
   return(
     <header className='header'>
       <div className='header_logo'>
-        <img src='#' alt='Logotipo da devsoft'/>
+        <img src='https://devsoft.co.ao/wp-content/uploads/2020/06/cropped-devsoft.png' width='200px' alt='Logotipo da devsoft'/>
       </div>
       <button className='header_btn'>Adicionar</button>
     </header>

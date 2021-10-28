@@ -1,26 +1,33 @@
-.passwords__item {
-  color: #868686;
+.companys__item {
+  color: #000000;
   background-color: #ffffff;
   line-height: 2;
-  padding: 20px;
   border-radius: 2px;
-  border: 2px solid #ccc;
-  box-shadow: 2px 3px 20px 10px #E1E6EE;
 }
 
-.passwords__item:hover {
+.companys__item:hover {
   cursor: pointer;
   box-shadow: 0px 5px 20px 10px #f7f7f7;
 }
 
-.passwords__item span {
+.companys__item span {
   font-weight: 600;
   font-size: 0.875rem;
 }
 
-.passwords__companyName{
-  font-weight: 600;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 20px;
-  padding-bottom: 15px;
+.companys__companyName {
+  background-color: #0D3A6D;
+  padding: 20px;
 }
+
+.companys__companyName h3 {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.companys__details {
+  padding: 10px 20px;
+}
+
+
+
