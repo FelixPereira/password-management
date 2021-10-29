@@ -4,6 +4,7 @@ import CardList from './Components/Cards/Card-list/Card-list';
 import Filter from './Components/Filter/Input';
 import passwords from './db'; 
 import Header from './Components/Header/Header';
+import Popup from './Components/Popup/Popup';
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
     <div>
       <Header />
       <main className='container'>
+        <Popup />
         <Filter handleFilter={handleFilter} />
         <CardList passwords={ filteredPasswords } />
       </main>
