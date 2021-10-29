@@ -1,9 +1,15 @@
 form {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .form_filds{
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form_filds input {
+  margin: 20px 0px;
 }

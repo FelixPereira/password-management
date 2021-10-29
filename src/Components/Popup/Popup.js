@@ -6,7 +6,7 @@ const popup = () => {
     <div className='form'>
       <form>
         <div className='form_filds'>
-          <lable for='name'> Nome da empresa </lable>
+          <label htmlFor='name'> Nome da empresa </label>
           <input
             id='name'
             type='text'
@@ -14,7 +14,7 @@ const popup = () => {
         </div>
 
         <div className='form_filds'>
-          <lable for='contacto'> Contacto da empresa </lable>
+          <label htmlFor='contacto'> Contacto da empresa </label>
           <input
             id='contacto'
             type='tel'
@@ -22,7 +22,7 @@ const popup = () => {
         </div>
 
         <div className='form_filds'>
-          <lable for='email'> Email da empresa </lable>
+          <label htmlFor='email'> Email da empresa </label>
           <input
             id='email'
             type='email'
@@ -30,7 +30,7 @@ const popup = () => {
         </div>
 
         <div className='form_filds'>
-          <lable for='url'> URL do website </lable>
+          <label htmlFor='url'> URL do website </label>
           <input
             id='url'
             type='text'
