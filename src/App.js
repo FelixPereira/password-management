@@ -20,9 +20,9 @@ const App = () => {
     <div>
       <Header />
       <main className='container'>
-        <Popup />
-        <Filter handleFilter={handleFilter} />
-        <CompanysList passwords={ filteredCompanys } />
+        {/*  <Popup /> */ }
+        {/* <Filter handleFilter={handleFilter} /> */}
+        <CompanysList companys={ filteredCompanys } />
       </main>
     </div>
   )

@@ -2,13 +2,13 @@ import React from 'react';
 import Company from '../Company/Company';
 import './Companys-list.css';
 
-const companysList = ({ passwords }) => {
+const companysList = ({ companys }) => {
   return(
-    <div className='passwords'>
-      <div className='passwords__innerSection'>
+    <div className='companys'>
+      <div className='companys__innerSection'>
         {
-          passwords.map(password => (
-            <Company key={ password.id } password={ password } />
+          companys.map(company => (
+            <Company key={ company.id } company={ company } />
           ))
         }
       </div>
