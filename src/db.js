@@ -1,4 +1,4 @@
-const passwords = [
+const companys = [
   {
     "id": 1,
     "companyName": "devsoft", 
@@ -72,4 +72,4 @@ const passwords = [
   }
 ]
 
-export default passwords;
+export default companys;

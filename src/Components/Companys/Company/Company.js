@@ -1,7 +1,7 @@
 import React from 'react';
-import './Card.css';
+import './Company.css';
 
-const Card = ({ password }) => {
+const company = ({ password }) => {
   return(
     <article className='companys__item'>
       <div className='companys__companyName'>
@@ -23,4 +23,4 @@ const Card = ({ password }) => {
   )
 }
 
-export default Card;
+export default company;

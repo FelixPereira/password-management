@@ -1,14 +1,14 @@
 import React from 'react';
-import Card from '../Card/Card';
-import './Card-list.css';
+import Company from '../Company/Company';
+import './Companys-list.css';
 
-const CardList = ({ passwords }) => {
+const companysList = ({ passwords }) => {
   return(
     <div className='passwords'>
       <div className='passwords__innerSection'>
         {
           passwords.map(password => (
-            <Card key={ password.id } password={ password } />
+            <Company key={ password.id } password={ password } />
           ))
         }
       </div>
@@ -16,4 +16,4 @@ const CardList = ({ passwords }) => {
   )
 }
 
-export default CardList;
+export default companysList;

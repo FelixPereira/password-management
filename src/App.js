@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './app.css';
-import CardList from './Components/Cards/Card-list/Card-list';
+import CompanysList from './Components/Companys/Companys-list/Companys-list';
 import Filter from './Components/Filter/Input';
-import passwords from './db'; 
+import companys from './db'; 
 import Header from './Components/Header/Header';
 import Popup from './Components/Popup/Popup';
 
@@ -14,7 +14,7 @@ const App = () => {
     setTerm( e.target.value);
   }
 
-  const filteredPasswords = passwords.filter(password => password.username.toLocaleLowerCase().includes(inputTerm.toLocaleLowerCase()))
+  const filteredCompanys = companys.filter(company => company.username.toLocaleLowerCase().includes(inputTerm.toLocaleLowerCase()))
 
   return(
     <div>
@@ -22,7 +22,7 @@ const App = () => {
       <main className='container'>
         <Popup />
         <Filter handleFilter={handleFilter} />
-        <CardList passwords={ filteredPasswords } />
+        <CompanysList passwords={ filteredCompanys } />
       </main>
     </div>
   )
