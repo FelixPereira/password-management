@@ -10,8 +10,8 @@ import Backdrop from './Components/Backdrop/Backdrop';
 
 const App = () => {
   const [inputTerm, setTerm] = useState('');
-  const [display, setDisplay] = useState(true);
-  const [backdrop, setBackdrop] = useState(true);
+  const [display, setDisplay] = useState(false);
+  const [backdrop, setBackdrop] = useState(false);
   
   const handleFilter = e => {
     setTerm( e.target.value);
@@ -26,7 +26,7 @@ const App = () => {
 
   return(
     <div>
-      {backdrop ? <Backdrop /> : null}
+      {backdrop ? <Backdrop handleAddCompany={handleAddCompany}  /> : null}
       <Header handleAddCompany={handleAddCompany}/>
       <main className='container'>
         {display ? <Popup /> : null}

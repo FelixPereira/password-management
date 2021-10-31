@@ -1,0 +1,18 @@
+.backdrop__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(hsl(233, 26%, 24%), hsla(233, 26%, 24%, 0.548));
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.backdrop__closePopup {
+  color: #ffffff;
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  font-size: 15px;
+  z-index: 2;
+}

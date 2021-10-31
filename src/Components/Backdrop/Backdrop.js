@@ -1,8 +1,12 @@
 import React from 'react';
+import './Backdrop.css'
 
-const backdrop = () => {
+const backdrop = ({ handleAddCompany }) => {
   return(
-    <h1>Olá</h1>
+    <div className='backdrop'>
+      <span className='backdrop__closePopup' onClick={handleAddCompany}>Close</span>
+      <div onClick={handleAddCompany} className='backdrop__backdrop'></div>
+    </div>
   )
 }
 
