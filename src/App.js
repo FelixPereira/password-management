@@ -9,6 +9,8 @@ import Popup from './Components/Popup/Popup';
 
 const App = () => {
   const [inputTerm, setTerm] = useState('');
+  const [display, setDisplay] = useState(true);
+  const [backdrop, setBackdrop] = useState(true);
   
   const handleFilter = e => {
     setTerm( e.target.value);
@@ -16,11 +18,18 @@ const App = () => {
 
   const filteredCompanys = companys.filter(company => company.username.toLocaleLowerCase().includes(inputTerm.toLocaleLowerCase()))
 
+  const handleAddCompany = () => {
+    setDisplay(!display);
+    setBackdrop(!backdrop);
+  }
+
   return(
     <div>
-      <Header />
+      <Header handleAddCompany={handleAddCompany}/>
       <main className='container'>
-        <Popup />
+        {
+          if(backdrop == true && display == true) 
+        }
         <Filter handleFilter={handleFilter} /> 
         <CompanysList companys={ filteredCompanys } />
       </main>
