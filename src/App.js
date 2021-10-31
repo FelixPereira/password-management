@@ -5,6 +5,7 @@ import Filter from './Components/Filter/Input';
 import companys from './db'; 
 import Header from './Components/Header/Header';
 import Popup from './Components/Popup/Popup';
+import Backdrop from './Components/Backdrop/Backdrop';
 
 
 const App = () => {
@@ -25,11 +26,10 @@ const App = () => {
 
   return(
     <div>
+      {backdrop ? <Backdrop /> : null}
       <Header handleAddCompany={handleAddCompany}/>
       <main className='container'>
-        {
-          if(backdrop == true && display == true) 
-        }
+        {display ? <Popup /> : null}
         <Filter handleFilter={handleFilter} /> 
         <CompanysList companys={ filteredCompanys } />
       </main>
