@@ -37,7 +37,7 @@ const popup = () => {
             placeholder='URL do website' />
         </div>
         
-        <button> Adicionar </button>
+        <button className='btn'> Adicionar </button>
         
       </form>
     </div>
