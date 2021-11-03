@@ -20,8 +20,8 @@ const companys = [
   {
     "id": 3,
     "companyName": "devsoft", 
-    "username": "Hermenegildo",
-    "email": "hermenegildo.saldanha@devsoft.co.ao", 
+    "username": "Gildo",
+    "email": "ildo.saldanha@devsoft.co.ao", 
     "password": "Hermenegildo123",
     "loginLink": "https://devsoft.co.ao/webmail"
   },
@@ -32,15 +32,6 @@ const companys = [
     "username": "Beatriz",
     "email": "beatriz.xavier@devsoft.co.ao", 
     "password": "Beatriz123",
-    "loginLink": "https://devsoft.co.ao/webmail"
-  },
-
-  {
-    "id": 5,
-    "companyName": "devsoft", 
-    "username": "Valdemiro",
-    "email": "valdemiro.felgueiras@devsoft.co.ao", 
-    "password": "Valdemiro123",
     "loginLink": "https://devsoft.co.ao/webmail"
   },
 

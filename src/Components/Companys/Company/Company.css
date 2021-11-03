@@ -2,7 +2,9 @@
   color: #000000;
   background-color: #ffffff;
   line-height: 2;
-  border-radius: 2px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  width: 100%;
 }
 
 .companys__item:hover {
@@ -17,6 +19,7 @@
 .companys__companyName {
   background-color: #0D3A6D;
   padding: 20px;
+  text-align: center;
 }
 
 .companys__companyName h3 {
@@ -46,6 +49,28 @@
 .companys__btn--red {
   background-color: transparent;
   color: red;
+}
+
+@media screen and (min-width: 768px) {
+  .companys__item {
+    width: 50%;
+  }
+
+  .companys__item:not(:nth-child(3n)) {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .companys__item {
+    width: 21.25rem;
+  }
+
+  .companys__item:not(:nth-child(3n)) {
+    margin-right: 10px;
+  }
+
+  
 }
 
 
