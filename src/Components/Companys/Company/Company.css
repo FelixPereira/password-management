@@ -29,7 +29,7 @@
 
 .companys__details,
 .companys_btn {
-  padding: 20px;
+  padding: 20px 12px;
 }
 
 .companys_btn {
@@ -51,26 +51,24 @@
   color: red;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 615px) {
   .companys__item {
-    width: 50%;
+    width: 48%;
   }
 
   .companys__item:not(:nth-child(3n)) {
-    margin-right: 10px;
+    margin-right: 3px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .companys__item {
-    width: 21.25rem;
-  }
+    width:24%;
+  }  
 
   .companys__item:not(:nth-child(3n)) {
-    margin-right: 10px;
+    margin-right: 2px;
   }
-
-  
 }
 
 

@@ -1,7 +1,15 @@
 .header {
-  padding: 0.625rem 8%;
+
+
+  background-color: #ffffff;
+}
+
+.header__items {
+  padding: 0.625rem 0;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+
 }
