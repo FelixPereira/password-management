@@ -1,16 +1,13 @@
 import React, { useState } from 'react';
 import './app.css';
-{/*  import CompanysList from './Components/Companys/Companys-list/Companys-list';
+import CompanysList from './Components/Companys/Companys-list/Companys-list';
 import Filter from './Components/Filter/Input';
 import companys from './db'; 
 import Header from './Components/Header/Header';
 import Popup from './Components/Popup/Popup';
-import Backdrop from './Components/Backdrop/Backdrop'; */}
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Detalhes from './Pages/Detalhes/Detalhes';
+import Backdrop from './Components/Backdrop/Backdrop'; 
 
 
-{/* 
 const App = () => {
 
   const [inputTerm, setTerm] = useState('');
@@ -38,21 +35,9 @@ const App = () => {
         <CompanysList companys={ filteredCompanys } />
       </main>
     </div>
-
   )
 }
 
-*/}
-
-function App() {
-  return(
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' component={ Detalhes } />
-      </Routes>
-    </BrowserRouter>
-  )
-}
 
 
 

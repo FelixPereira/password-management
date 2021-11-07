@@ -15,9 +15,9 @@ const company = ({ company }) => {
       </div>
 
       <div className='companys_btn'>
-        <button className='btn'>Detalhes</button>
-        <button className='btn'>Arquivar</button>
-        <button className='btn companys__btn--red'>Remover</button>
+        <button className='btn company__detailsBtn'>Detalhes</button>
+        <button className='btn company__archieveBtn'>Arquivar</button>
+        <button className='btn company__btn-- companys__deleteBtn'>Remover</button>
       </div>
     </article>
   )

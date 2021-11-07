@@ -1,34 +1,18 @@
-.form {
+form {
   width: 100%;
   background-color: #ffffff;
   padding: 40px 30px;
   border-radius: 10px;
   position: absolute;
-  top: 2%;
+  /*top: 2%;*/
   z-index: 2;
-}
 
-form {
   display: flex;
   flex-direction: column;
 }
 
-.form_filds{
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-}
-
-.form_filds input {
-  margin: 20px 0px;
-  height: 35px;
-}
-
-.form_filds input:focus {
-  border: 2px solid #0D3A6D;
-}
-
-.form_filds label {
-  font-size: 14px;
-  font-weight: 500;
+@media screen and (min-width: 768px) {
+  form {
+    width: 50%;
+  }
 }

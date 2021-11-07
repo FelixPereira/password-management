@@ -29,12 +29,16 @@
 
 .companys__details,
 .companys_btn {
-  padding: 20px 12px;
+  padding: 20px;
 }
 
 .companys_btn {
   display: flex;
   justify-content: space-between;
+}
+
+.companys_btn button:not(:last-child) {
+  margin-right: 5px;
 }
 
 .btn {
@@ -46,30 +50,11 @@
   cursor: pointer;
 }
 
-.companys__btn--red {
+.companys__deleteBtn {
   background-color: transparent;
   color: red;
 }
 
-@media screen and (min-width: 615px) {
-  .companys__item {
-    width: 48%;
-  }
-
-  .companys__item:not(:nth-child(3n)) {
-    margin-right: 3px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .companys__item {
-    width:24%;
-  }  
-
-  .companys__item:not(:nth-child(3n)) {
-    margin-right: 2px;
-  }
-}
 
 
 
