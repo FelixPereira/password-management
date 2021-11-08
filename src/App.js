@@ -1,44 +1,38 @@
 import React, { useState } from 'react';
-import './app.css';
-import CompanysList from './Components/Companys/Companys-list/Companys-list';
-import Filter from './Components/Filter/Input';
-import companys from './db'; 
 import Header from './Components/Header/Header';
+import Backdrop from './Components/Backdrop/Backdrop';
 import Popup from './Components/Popup/Popup';
-import Backdrop from './Components/Backdrop/Backdrop'; 
+import './app.css';
 
+import HomePage from './Pages/HomePage/homePage';
+
+
+const [inputTerm, setTerm] = useState('');
+const [display, setDisplay] = useState(false);
+const [backdrop, setBackdrop] = useState(false);
+  
+const handleFilter = e => {
+  setTerm( e.target.value);
+}
+
+const filteredCompanys = companys.filter(company => company.companyName.toLocaleLowerCase().includes(inputTerm.toLocaleLowerCase()))
+
+
+
+const handleAddCompany = () => {
+  setDisplay(!display);
+  setBackdrop(!backdrop);
+}
 
 const App = () => {
-
-  const [inputTerm, setTerm] = useState('');
-  const [display, setDisplay] = useState(false);
-  const [backdrop, setBackdrop] = useState(false);
-  
-  const handleFilter = e => {
-    setTerm( e.target.value);
-  }
-
-  const filteredCompanys = companys.filter(company => company.username.toLocaleLowerCase().includes(inputTerm.toLocaleLowerCase()))
-
-  const handleAddCompany = () => {
-    setDisplay(!display);
-    setBackdrop(!backdrop);
-  }
-
   return(
     <div>
       {backdrop ? <Backdrop handleAddCompany={handleAddCompany}  /> : null}
+      {display ? <Popup /> : null}
       <Header handleAddCompany={handleAddCompany}/>
-      <main className='container'>
-        {display ? <Popup /> : null}
-        <Filter handleFilter={handleFilter} /> 
-        <CompanysList companys={ filteredCompanys } />
-      </main>
+      <HomePage filteredCompanys={filteredCompanys} />
     </div>
   )
 }
-
-
-
 
 export default App;

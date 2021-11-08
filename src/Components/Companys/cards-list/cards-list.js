@@ -1,6 +1,6 @@
 import React from 'react';
-import Company from '../Company/Company';
-import './Companys-list.css';
+import Card from '../card/card';
+import './cards-list.css';
 
 const companysList = ({ companys }) => {
   return(
@@ -8,7 +8,7 @@ const companysList = ({ companys }) => {
       <div className='companys__innerSection'>
         {
           companys.map(company => (
-            <Company key={ company.id } company={ company } />
+            <Card key={ company.id } company={ company } />
           ))
         }
       </div>

@@ -1,4 +1,4 @@
-.companys__item {
+.card {
   color: #000000;
   background-color: #ffffff;
   line-height: 2;
@@ -7,37 +7,37 @@
   width: 100%;
 }
 
-.companys__item:hover {
+.card:hover {
   box-shadow: 0px 5px 20px 10px #f7f7f7;
 }
 
-.companys__item span {
+.card span {
   font-weight: 600;
   font-size: 0.875rem;
 }
 
-.companys__companyName {
+.card__header {
   background-color: #0D3A6D;
   padding: 20px;
   text-align: center;
 }
 
-.companys__companyName h3 {
+.card__header h3 {
   font-weight: 600;
   color: #ffffff;
 }
 
-.companys__details,
-.companys_btn {
+.card__body,
+.card__footer {
   padding: 20px;
 }
 
-.companys_btn {
+.card__footer {
   display: flex;
   justify-content: space-between;
 }
 
-.companys_btn button:not(:last-child) {
+.card__footer button:not(:last-child) {
   margin-right: 5px;
 }
 
