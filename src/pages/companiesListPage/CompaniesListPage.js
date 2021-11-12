@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Filter from '../../Components/Filter/Input';
-import CompanysList from '../../Components/Companys/cards-list/cards-list';
+import Filter from '../../components/filter/FilterInput';
+import CompaniesList from '../../components/companies/companiesList/CompaniesList';
 import companys from '../../db';
 
 
@@ -17,10 +17,8 @@ const HomePage = () => {
 
   return(
     <div>
-      <main className='container'>
-        <Filter handleFilter={handleFilter} />
-        <CompanysList companys={ filteredCompanys } />
-      </main>
+      <Filter handleFilter={handleFilter} />
+      <CompaniesList companys={ filteredCompanys } />
     </div>
   )
 }
