@@ -1,13 +1,10 @@
-input {
-  padding: 0.625rem;
-  border: 1px solid #ccc;
-  outline: none;
+.filter__input {
   width: 100%;
 
 }
 
 @media screen and (min-width: 615px) {
-  input {
+  .filter__input {
     width: 30%;
     margin: 0 auto 1.875rem !important;
   }
