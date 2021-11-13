@@ -8,7 +8,7 @@ const FilterInput = ({ handleFilter }) => {
         className='filter__input'
         onChange={handleFilter}
         type='search'
-        placeholder='Insira um termo...'
+        placeholder='Insira um termo paa pesquisar...'
       />
     </div>
   )

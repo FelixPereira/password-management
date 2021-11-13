@@ -1,7 +1,7 @@
 import React from 'react';
 import './popup.css';
 
-const popup = () => {
+const Popup = () => {
   return(
     <form className='addNew__form'>
       <div className='form_filds'>
@@ -41,4 +41,4 @@ const popup = () => {
   )
 }
 
-export default popup;
+export default Popup;

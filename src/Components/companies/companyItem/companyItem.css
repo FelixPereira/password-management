@@ -1,4 +1,4 @@
-.card {
+.companies__item {
   color: #000000;
   background-color: #ffffff;
   line-height: 2;
@@ -16,28 +16,28 @@
   font-size: 0.875rem;
 }
 
-.card__header {
+.companies__name {
   background-color: #0D3A6D;
   padding: 20px;
   text-align: center;
 }
 
-.card__header h3 {
+.companies__name h3 {
   font-weight: 600;
   color: #ffffff;
 }
 
-.card__body,
-.card__footer {
+.companies__details,
+.companies__btn {
   padding: 20px;
 }
 
-.card__footer {
+.companies__btn {
   display: flex;
   justify-content: space-between;
 }
 
-.card__footer button:not(:last-child) {
+.companies__btn button:not(:last-child) {
   margin-right: 5px;
 }
 
@@ -50,7 +50,7 @@
   cursor: pointer;
 }
 
-.companys__deleteBtn {
+.companies__btn--delete {
   background-color: transparent;
   color: red;
 }
