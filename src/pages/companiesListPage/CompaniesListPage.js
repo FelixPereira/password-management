@@ -3,14 +3,11 @@ import Filter from '../../components/filter/FilterInput';
 import CompaniesList from '../../components/companies/companiesList/CompaniesList';
 import CompanyDetail from '../companyDetailPage/companyDetailPage';
 import companies from '../../db';
-import  { useHistory, useMatch } from 'react-router-dom';
 
 
 
-const CompaniesListPage = (props) => {
-  console.log(props);
-
-
+const CompaniesListPage = () => {
+ 
   const [inputTerm, setTerm] = useState('');
 
   const filteredCompanies = companies.filter(company => company.companyName.includes(inputTerm));

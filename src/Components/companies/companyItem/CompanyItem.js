@@ -16,7 +16,7 @@ const Company = ({ company }) => {
       </div>
 
       <div className='companies__btn'>
-        <Link to='/companieslist/6' className='btn'>Detalhe</Link>
+        <Link to={`/companieslist/${company.id}`} className='btn'>Detalhes</Link>
         <button className='btn'>Arquivar</button>
         <button className='btn companies__btn--delete'>Remover</button>
       </div>
