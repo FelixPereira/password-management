@@ -2,11 +2,11 @@ import React from 'react';
 import Company from '../companyItem/CompanyItem';
 import './companiesList.css';
 
-const companysList = ({ companys }) => {
+const companysList = ({ companies }) => {
   return(
     <div className='companies'>
       {
-        companys.map(company => (
+        companies.map(company => (
           <Company key={ company.id } company={ company } />
         ))
       }

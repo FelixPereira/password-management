@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
 import Filter from '../../components/filter/FilterInput';
 import CompaniesList from '../../components/companies/companiesList/CompaniesList';
-import companys from '../../db';
+import CompanyDetail from '../companyDetailPage/companyDetailPage';
+import companies from '../../db';
+import  { useHistory, useMatch } from 'react-router-dom';
 
 
 
-const HomePage = () => {
+const CompaniesListPage = (props) => {
+  console.log(props);
+
 
   const [inputTerm, setTerm] = useState('');
 
-  const filteredCompanys = companys.filter(company => company.companyName.includes(inputTerm))
+  const filteredCompanies = companies.filter(company => company.companyName.includes(inputTerm));
 
   const handleFilter = e => {
     setTerm( e.target.value);
@@ -18,9 +22,11 @@ const HomePage = () => {
   return(
     <div>
       <Filter handleFilter={handleFilter} />
-      <CompaniesList companys={ filteredCompanys } />
+      <CompaniesList companies={ filteredCompanies } />
+      <CompanyDetail {...companies}/>
+      
     </div>
   )
 }
 
-export default HomePage;
+export default CompaniesListPage;

@@ -1,5 +1,6 @@
 import React from 'react';
 import './companyItem.css';
+import { Link } from 'react-router-dom';
 
 const Company = ({ company }) => {
   return(
@@ -15,7 +16,7 @@ const Company = ({ company }) => {
       </div>
 
       <div className='companies__btn'>
-        <button className='btn'>Detalhes</button>
+        <Link to='/companieslist/6' className='btn'>Detalhe</Link>
         <button className='btn'>Arquivar</button>
         <button className='btn companies__btn--delete'>Remover</button>
       </div>

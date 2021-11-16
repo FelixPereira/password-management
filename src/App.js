@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 import Header from './components/header/Header';
 import Backdrop from './components/backdrop/Backdrop';
 import Popup from './components/popup/Popup';
 
 import CompaniesListPage from './pages/companiesListPage/CompaniesListPage';
+import CompanyDetailPage from './pages/companyDetailPage/companyDetailPage';
 
 import './app.css';
 
@@ -26,7 +27,12 @@ const App = () => {
       <main className='container'>
         {backdrop ? <Backdrop handleAddCompany={handleAddCompany}  /> : null}
         {popup ? <Popup /> : null}
-        <CompaniesListPage />
+        <Routes>
+          <Route path='/' element={<Navigate replace to='/companieslist' />} />
+          <Route path='/companieslist' element={<CompaniesListPage />} />
+          <Route path='/companieslist/:companyid' element={<CompanyDetailPage />} />
+          <Route path='*' element={<CompaniesListPage />} />
+        </Routes>
       </main>
     </Router>
   )

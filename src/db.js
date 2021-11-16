@@ -1,4 +1,4 @@
-const companys = [
+const companies = [
   {
     "id": 1,
     "companyName": "devsoft", 
@@ -56,4 +56,10 @@ const companys = [
   }
 ]
 
-export default companys;
+export function getCompanies() {
+  return companies;
+}
+
+export function getCompany(companyid) {
+  return companies.find(company => company.id === companyid);
+}
