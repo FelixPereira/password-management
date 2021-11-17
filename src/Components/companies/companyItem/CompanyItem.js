@@ -1,6 +1,11 @@
 import React from 'react';
-import './companyItem.css';
+
 import { Link } from 'react-router-dom';
+
+import Button from '../button/Button';
+
+import './companyItem.css';
+
 
 const Company = ({ company }) => {
   return(
@@ -17,8 +22,8 @@ const Company = ({ company }) => {
 
       <div className='companies__btn'>
         <Link to={`/companieslist/${company.id}`} className='btn'>Detalhes</Link>
-        <button className='btn'>Arquivar</button>
-        <button className='companies__btn--delete'>Remover</button>
+        <Button>Arquivar</Button>
+        <Button>Remover</Button>
       </div>
     </article>
   )

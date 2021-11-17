@@ -6,14 +6,6 @@
 
 /* default start */
 
-.btn {
-  background-color: #A0C618;
-  color: #ffffff;
-  border: none;
-  padding: 0.625rem;
-  border-radius: 2px;
-}
-
 .form_filds{
   display: flex;
   flex-direction: column;
