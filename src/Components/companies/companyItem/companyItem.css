@@ -41,18 +41,12 @@
   margin-right: 5px;
 }
 
-.btn {
-  background-color: #A0C618;
-  color: #ffffff;
-  border: none;
-  padding: 0.625rem;
-  border-radius: 2px;
-  cursor: pointer;
-}
 
 .companies__btn--delete {
   background-color: transparent;
   color: red;
+  border: none;
+  cursor: pointer;
 }
 
 

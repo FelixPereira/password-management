@@ -59,14 +59,3 @@ const companies = [
 export default companies;
 
 
-{/*
-
-export function getCompanies() {
-  return companies;
-}
-
-export function getCompany(companyid) {
-  return companies.find(company => company.id === companyid);
-}
-
-*/}

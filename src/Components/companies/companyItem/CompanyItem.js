@@ -18,7 +18,7 @@ const Company = ({ company }) => {
       <div className='companies__btn'>
         <Link to={`/companieslist/${company.id}`} className='btn'>Detalhes</Link>
         <button className='btn'>Arquivar</button>
-        <button className='btn companies__btn--delete'>Remover</button>
+        <button className='companies__btn--delete'>Remover</button>
       </div>
     </article>
   )
