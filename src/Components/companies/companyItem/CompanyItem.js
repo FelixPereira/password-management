@@ -5,12 +5,7 @@ import Button from '../button/Button';
 import './companyItem.css';
 
 
-const Card = ({ id, name, telephone, email, website, senha, username, items }) => {
-    items.map(item => (
-      console.log(item[1])
-    ))
-
-
+const Card = ({ id, name, telephone, email, website, password, username, detailPage }) => {
   return(
     <div>
     <article className='card'>
@@ -25,13 +20,14 @@ const Card = ({ id, name, telephone, email, website, senha, username, items }) =
 
         {website ? (<p> <strong> Website: </strong> { website } </p>) : null }
 
-        {senha ? (<p> <strong> Senha: </strong> { senha } </p>) : null }
+        {password ? (<p> <strong> Senha: </strong> { password } </p>) : null }
 
         {username ? (<p> <strong> Username: </strong> { username } </p>) : null }
       </div>
 
       <div className='card__footer'>
-        <Link to={`/companieslist/${id}`} className='btn'>Detalhes</Link>
+        {detailPage ? (<Link to={`/companieslist/${id}`} className='btn'>Detalhes</Link>) : null}
+        
         <Button>Arquivar</Button>
         <Button>Remover</Button>
       </div>

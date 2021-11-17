@@ -2,6 +2,7 @@ import React from 'react';
 import Card from '../companyItem/CompanyItem';
 import './companiesList.css';
 
+
 const companysList = ({ companies }) => {
   return(
     <div className='companies'>
@@ -15,11 +16,13 @@ const companysList = ({ companies }) => {
             email={ company.email }
             website={ company.website }
             items={company.items}
+            detailPage={true}
             />
         ))
       }
     </div>
   )
+  
 }
 
 export default companysList;
