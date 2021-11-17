@@ -1,4 +1,4 @@
-.companies__item {
+.card {
   color: #000000;
   background-color: #ffffff;
   line-height: 2;
@@ -11,37 +11,27 @@
   box-shadow: 0px 5px 20px 10px #f7f7f7;
 }
 
-.card span {
-  font-weight: 600;
-  font-size: 0.875rem;
-}
-
-.companies__name {
+.card__header {
   background-color: #0D3A6D;
   padding: 20px;
   text-align: center;
 }
 
-.companies__name h3 {
+.card__header h3 {
   font-weight: 600;
   color: #ffffff;
 }
 
-.companies__details,
-.companies__btn {
+.card__body,
+.card__footer {
   padding: 20px;
 }
 
-.companies__btn {
+.card__footer {
   display: flex;
   justify-content: space-between;
 }
 
-.companies__btn button:not(:last-child) {
+.card__footer button:not(:last-child) {
   margin-right: 5px;
 }
-
-
-
-
-

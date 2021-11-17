@@ -3,14 +3,13 @@ import { useParams } from 'react-router-dom';
 
 import './companyDetailPage.css';
 
-import companies from '../../db';
+import {getCompany} from '../../db';
 //import Sidebar from '../../components/sidebar/Sidebar';
 
 const CompanyDetail = () => {
   const params = useParams();
+  const company = getCompany(parseInt(params.companyid, 10))
 
-  const company = companies.find(company => company.id === parseInt(params.companyid));
-  console.log(company)
 
   return(
     <section className='companyDetail'>

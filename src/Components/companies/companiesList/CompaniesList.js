@@ -1,5 +1,5 @@
 import React from 'react';
-import Company from '../companyItem/CompanyItem';
+import Card from '../companyItem/CompanyItem';
 import './companiesList.css';
 
 const companysList = ({ companies }) => {
@@ -7,7 +7,15 @@ const companysList = ({ companies }) => {
     <div className='companies'>
       {
         companies.map(company => (
-          <Company key={ company.id } company={ company } />
+          <Card 
+            key={ company.id } 
+            id={ company.id } 
+            name={ company.companyName }
+            telephone={ company.telephone }
+            email={ company.email }
+            website={ company.website }
+            items={company.items}
+            />
         ))
       }
     </div>

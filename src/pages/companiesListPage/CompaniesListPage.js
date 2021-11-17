@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import Filter from '../../components/filter/FilterInput';
 import CompaniesList from '../../components/companies/companiesList/CompaniesList';
-import companies from '../../db';
+import { getCompanies }  from '../../db';
 
 
 
 const CompaniesListPage = () => {
+  const companies = getCompanies();
 
- 
   const [inputTerm, setTerm] = useState('');
 
   const filteredCompanies = companies.filter(company => company.companyName.toLowerCase().includes(inputTerm.toLocaleLowerCase()));
