@@ -1,9 +1,9 @@
 import React from 'react';
-import Card from '../companyItem/CompanyItem';
-import './companiesList.css';
+import Card from '../companyCard/CompanyCard';
+import './companiesCardList.css';
 
 
-const companysList = ({ companies }) => {
+const CompaniesCardList = ({ companies }) => {
   return(
     <div className='companies'>
       {
@@ -24,4 +24,4 @@ const companysList = ({ companies }) => {
   
 }
 
-export default companysList;
+export default CompaniesCardList;

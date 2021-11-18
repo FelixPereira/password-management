@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Button from '../../button/Button';
-import './companyItem.css';
+import Button from '../button/Button';
+import './companyCard.css';
 
 
 const Card = ({ id, name, telephone, email, website, password, detailBtn }) => {
