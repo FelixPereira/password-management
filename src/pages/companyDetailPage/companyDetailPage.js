@@ -6,7 +6,15 @@ import Card from '../../components/companies/companyItem/CompanyItem';
 import './companyDetailPage.css';
 
 import {getCompany} from '../../db';
-//import Sidebar from '../../components/sidebar/Sidebar';
+import Sidebar from '../../components/sidebar/Sidebar';
+
+const Teste = ({company}) => {
+  return (
+      company.items.map(item => (
+        <Card key={item.id} name={item.name} email={item.email} password={item.password} />
+      ))
+  )
+}
 
 const CompanyDetail = () => {
   const params = useParams();
@@ -14,11 +22,8 @@ const CompanyDetail = () => {
 
   return(
     <section className='companyDetail'>
-      {
-        company.items.map(item => (
-          <Card key={item.id} name={item.name} email={item.email} password={item.password} />
-        ))
-      }
+      <Sidebar />
+      <Teste company={company} />
     </section>
   )
 }

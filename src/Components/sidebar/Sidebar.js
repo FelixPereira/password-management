@@ -1,8 +1,12 @@
 import React from 'react';
 
+import './sidebar.css';
+
 const Sidebar = () => {
   return(
-    <h1>Hello sidebar</h1>
+    <aside className='sidebar'>
+      <h1>Hello sidebar</h1>
+    </aside>
   )
 }
 
