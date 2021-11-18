@@ -4,6 +4,7 @@
   border: none;
   padding: 5px 15px;
   border-radius: 2px;
+  font-size: 14px;
 }
 
 .companies__btn--delete {

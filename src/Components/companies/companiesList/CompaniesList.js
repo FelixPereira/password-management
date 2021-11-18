@@ -15,7 +15,6 @@ const companysList = ({ companies }) => {
             telephone={ company.telephone }
             email={ company.email }
             website={ company.website }
-            items={company.items}
             detailPage={true}
             />
         ))
