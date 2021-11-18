@@ -6,7 +6,7 @@ import Backdrop from './components/backdrop/Backdrop';
 import Popup from './components/popup/Popup';
 
 import CompaniesListPage from './pages/companiesListPage/CompaniesListPage';
-import CompanyDetailPage from './pages/companyDetailPage/companyDetailPage';
+import CompanyOverviewPage from './pages/companyOverviewPage/CompanyOverviewPage';
 
 import './app.css';
 
@@ -30,7 +30,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Navigate replace to='/companieslist' />} />
           <Route path='/companieslist' element={<CompaniesListPage />} />
-          <Route path='/companieslist/:companyid' element={<CompanyDetailPage />} />
+          <Route path='/companieslist/:companyid' element={<CompanyOverviewPage />} />
           <Route path='*' element={<CompaniesListPage />} />
         </Routes>
       </main>

@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 
 import Card from '../../components/companies/companyItem/CompanyItem';
 
-import './companyDetailPage.css';
+import './companyOverviewPage.css';
 
 import {getCompany} from '../../db';
 import Sidebar from '../../components/sidebar/Sidebar';
@@ -16,7 +16,7 @@ const Teste = ({company}) => {
   )
 }
 
-const CompanyDetail = () => {
+const CompanyOverview = () => {
   const params = useParams();
   const company = getCompany(parseInt(params.companyid, 10))
 
@@ -28,4 +28,4 @@ const CompanyDetail = () => {
   )
 }
 
-export default CompanyDetail;
+export default CompanyOverview;
