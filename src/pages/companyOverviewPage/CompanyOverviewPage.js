@@ -7,21 +7,15 @@ import './companyOverviewPage.css';
 
 import {getCompany} from '../../db';
 import Sidebar from '../../components/sidebar/Sidebar';
+import CompanyItem from '../../components/companyItem/CompanyItem';
 
-const CompanyItem = ({company}) => {
-  return (
-      company.items.map(item => (
-        <Card key={item.id} name={item.name} email={item.email} password={item.password} />
-      ))
-  )
-}
 
 const CompanyOverview = () => {
   const params = useParams();
   const company = getCompany(parseInt(params.companyid, 10))
 
   return(
-    <section className='companyDetail'>
+    <section className='companyOverview'>
       <Sidebar />
       <CompanyItem company={company} />
     </section>

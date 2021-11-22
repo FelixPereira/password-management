@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
+
+import { getCompanies }  from '../../db';
+import './companiesListPage.css';
+
 import Filter from '../../components/filter/FilterInput';
 import CompaniesCardList from '../../components/companiesCardList/CompaniesCardList';
-import { getCompanies }  from '../../db';
+
 
 
 const CompaniesListPage = () => {
@@ -16,7 +20,7 @@ const CompaniesListPage = () => {
   }
 
   return(
-    <div>
+    <div className='list__companies'>
       <Filter handleFilter={handleFilter} />
       <CompaniesCardList companies={ filteredCompanies } />
     </div>

@@ -1,19 +1,23 @@
-.companies{
+.teste {
+  width: 100%;
+  position: absolute;
+  right: 0;
   display: grid;
   grid-template-columns: 1fr;
   justify-content: space-between;
 }
 
 
-@media screen and (min-width: 786px) {
-  .companies{
+@media screen and (min-width: 768px) {
+  .teste {
     grid-template-columns: 1fr 1fr;
-    column-gap: 40px;
+    column-gap: 20px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .companies{
+  .teste {
     grid-template-columns: 1fr 1fr 1fr;
+    width: 75%;
   }
 }

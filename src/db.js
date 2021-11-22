@@ -1,16 +1,16 @@
 const companies = [
   {
     id: 1,
-    companyName: "Devsoft", 
-    email: "gerala@devsoft.co.ao", 
-    telephone: "+244 934654785",
-    website: "devsoft.co.ao",
+    companyName: "Tulikeni", 
+    email: "gerala@tulikeni.ao", 
+    telephone: "",
+    website: "tulikeni.ao",
     items: [
       {
         id: 1,
-        name: "António", 
-        email: "antonio.@devsoft.co.ao", 
-        password: "antonio123",
+        name: "admin", 
+        email: "felix.pereira@devsoft.co.ao", 
+        password: "@Tulikeny123#",
       },
 
       {
@@ -52,6 +52,26 @@ const companies = [
 
       {
         id: 3,
+        name: "João", 
+        email: "joao@pocnoticias.ao", 
+        password: "joao123",
+      },
+      {
+        id: 4,
+        name: "Jorge", 
+        email: "jorge@pocnoticias.ao", 
+        password: "jorge123",
+      },
+
+      {
+        id: 5,
+        name: "Pedro", 
+        email: "pedro@pocnoticias.ao", 
+        password: "pedro123",
+      },
+
+      {
+        id: 6,
         name: "João", 
         email: "joao@pocnoticias.ao", 
         password: "joao123",
