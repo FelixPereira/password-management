@@ -1,5 +1,9 @@
 import React from 'react';
 
+import './form.css';
+
+import Button from '../button/Button';
+
 const Form = () => {
   return(
     <form className='addNew__form'>
@@ -34,8 +38,8 @@ const Form = () => {
           type='text'
           placeholder='URL do website' />
       </div>
-        
-      <button className='btn'> Adicionar </button>
+
+      <Button>Iniciar sessão</Button>
     </form>
   )
 }
