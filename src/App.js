@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Header from './components/header/Header';
 import Backdrop from './components/backdrop/Backdrop';
 import Popup from './components/popup/Popup';
 
+import SignInPage from './pages/signInPage/signInPage';
 import CompaniesListPage from './pages/companiesListPage/CompaniesListPage';
 import CompanyOverviewPage from './pages/companyOverviewPage/CompanyOverviewPage';
 
@@ -28,7 +29,7 @@ const App = () => {
         {backdrop ? <Backdrop handleAddCompany={handleAddCompany}  /> : null}
         {popup ? <Popup /> : null}
         <Routes>
-          <Route path='/' element={<Navigate replace to='/companieslist' />} />
+          <Route path='/' element={<SignInPage />} />
           <Route path='/companieslist' element={<CompaniesListPage />} />
           <Route path='/companieslist/:companyid' element={<CompanyOverviewPage />} />
           <Route path='*' element={<CompaniesListPage />} />

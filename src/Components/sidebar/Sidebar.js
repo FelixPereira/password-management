@@ -2,10 +2,10 @@ import React from 'react';
 
 import './sidebar.css';
 
-const Sidebar = () => {
+const Sidebar = ({ companyName }) => {
   return(
     <aside className='sidebar'>
-      <h1>Hello sidebar</h1>
+      <h1 style={{color: '#ffffff'}}>{companyName}</h1>
     </aside>
   )
 }

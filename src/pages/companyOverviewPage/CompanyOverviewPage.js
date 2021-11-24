@@ -1,7 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-import Card from '../../components/companyCard/CompanyCard';
 
 import './companyOverviewPage.css';
 
@@ -16,7 +15,7 @@ const CompanyOverview = () => {
 
   return(
     <section className='companyOverview'>
-      <Sidebar />
+      <Sidebar companyName='teste' />
       <CompanyItem company={company} />
     </section>
   )
