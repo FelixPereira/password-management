@@ -2,9 +2,16 @@
   background-color: #A0C618;
   color: #ffffff;
   border: none;
-  padding: 5px 15px;
+  padding: 10px 15px;
   border-radius: 2px;
   font-size: 14px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.btn:hover {
+  background-color: #002F65;
+  transition: .5s;
 }
 
 .companies__btn--delete {

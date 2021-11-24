@@ -4,7 +4,7 @@ import Form from '../form/Form';
 
 const Popup = () => {
   return(
-    <Form />
+    <Form popup />
   )
 }
 
