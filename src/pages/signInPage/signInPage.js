@@ -7,7 +7,7 @@ import Form from '../../components/form/Form';
 
 const SignInPage = () => {
   return(
-      <Form signIn />
+    <Form signIn />
   )
 }
 

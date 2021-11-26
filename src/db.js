@@ -31,16 +31,16 @@ const companies = [
 
   {
     id: 2,
-    companyName: "Pocnotícias", 
-    email: "geral@pocnoticias.ao", 
-    telephone: "+244 934654785",
-    website: "pocnoticias.ao",
+    companyName: "Lac", 
+    email: "felix.pereira@devsoft.co.ao", 
+    telephone: "+244 9xx xx xx",
+    website: "lac.ao",
     items: [
       {
         id: 1,
-        name: "Jorge", 
-        email: "jorge@pocnoticias.ao", 
-        password: "jorge123",
+        name: "admin", 
+        email: "felix.pereira@devsoft.co.ao", 
+        password: "admin123",
       },
 
       {

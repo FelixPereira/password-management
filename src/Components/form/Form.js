@@ -6,7 +6,7 @@ import Button from '../button/Button';
 
 const Form = ({ signIn, popup }) => {
   return(
-    <form className='addNew__form'>
+    <form className={`${popup ? 'popup-form' : ''} addNew__form`}>
       {
         popup ?
           <div>
@@ -65,7 +65,11 @@ const Form = ({ signIn, popup }) => {
                 type='password'
                 placeholder='Senha' />
             </div>
-            <Button>Iniciar sessão</Button>
+
+            <div className='signin-btns'>
+              <Button>Iniciar sessão</Button>
+              <Button>Sign in with Google</Button>
+            </div>
           </idv>
           : ''
       }
