@@ -1,5 +1,4 @@
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth';
+import firebase from 'firebase/app';
 
 const config = {
   apiKey: "AIzaSyDG45h_lzLGSl23bvjY1oeSTzJFtwWmoTo",
@@ -8,22 +7,16 @@ const config = {
   storageBucket: "passwordmanagement-d8967.appspot.com",
   messagingSenderId: "294068809545",
   appId: "1:294068809545:web:fb635d349f6c46c8e03498"
-};
+}
 
-firebase.initializeApp(config);
-
+firebase.initializeApp(config)
 
 export const auth = firebase.auth();
 
+const provider = firebase.auth.GoogleAuthProvider();
 
-export const signInWithGoogle = () => {
-  const provider = new firebase.auth.GoogleAuthProvider();
-  auth.signInWithPopup(provider)
-  .then((res) => {
-    console.log(res);
-  }).catch((err) => {
-    console.log(err);
-  })
+export const signinWithGoogle = () => {
+  auth.signinWithPopup(provider)
 }
 
-export {firebase}; 
+export default firebase;
